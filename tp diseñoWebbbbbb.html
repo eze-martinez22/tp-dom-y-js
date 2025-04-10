@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <tittle>TP dom y JS</tittle>
+</head>
+
+<body>
+    <p id="myp"></p>
+    <p class="test">Hello Word</p>
+    <p class="test"></p>
+</body>
+<table style="border: 1px solid">
+<thead>
+    <tr>
+        <th> columna 1</th>
+        <th> columna 2</th>
+    </tr>
+      </thead>
+     <tbody></tbody>
+</table>
+<br>
+<button onclick="InsertRow()">Insertar fila</button>
+<button onclick="deleteRow()">borrar fila</button>
+<script>
+    function insertRow() {
+        var p = document.getElementById('myp')
+        p.innerHTML = "Hello Word"
+    }
+    function deleteRow() {
+        document.getElementById(rowID).remove()
+    }
+
+</script>
+</body>
+
+</html>
